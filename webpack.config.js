@@ -4,8 +4,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-let mode = "development"
-let target = "web"
+let mode = "development";
+
+let target = "web";
 const plugins = [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(), 
@@ -17,10 +18,10 @@ const plugins = [
 if (process.env.NODE_ENV === "production") {
     mode = "production";
     target = 'browserslist';
-} 
+};
 if (process.env.SERVE){
     plugins.push(new ReactRefreshWebpackPlugin())
-}
+};
 
 module.exports = {
     mode: mode,
