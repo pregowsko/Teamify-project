@@ -1,0 +1,97 @@
+@import 'variables';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 20px;
+    margin: 15px;
+    background-color: $headerBgc;
+
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px 30px 0;
+        width: auto;
+        height: 100%;
+    }
+
+    &_logo {
+        display: flex;
+        color: $darkBlue;
+        font-size: 1.8rem;
+        margin: 0 40px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    &_menu {
+        
+        &_list {
+            display: flex;
+            list-style: none;
+            
+        }
+        
+        &_listItem {
+            padding: 0 20px;
+            a {
+                font-size: 1.2rem;
+                text-decoration: none;
+                font-weight: bold;
+                color: $darkBlue;  
+    
+            }
+        }
+        
+    }
+
+    &_line {
+        margin: 0 40px;
+    }
+
+    &_title {
+        margin: 150px 0 10px 20%;
+        font-size: 4rem;
+        font-weight: bold;
+
+    }
+
+    &_form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px auto 100px auto;
+        padding: 20px;
+        width: 60%;
+        height: 70px;
+        background-color: $lightBgc;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px $shadowInput;
+
+        &_input {
+            flex: 1;
+            font-size: 15px;
+            height: 50px;
+            border: none;
+            outline: none;
+            background-color: $lightBgc;
+            padding-right: 10px;
+        }
+
+        &_button {
+            font-size: 15px;
+            height: 50px;
+            border: none;
+            outline: none;
+            background-color: $darkBlue;
+            color: $lightBgc;
+            padding: 0 30px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+
+}
