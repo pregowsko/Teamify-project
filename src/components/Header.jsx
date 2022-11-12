@@ -31,7 +31,7 @@ const Header = () => {
                         </ul>
                     </nav>
                 </div>
-                <hr className='header_line'/>
+                <div className='header_line'></div> 
                 <div className="header_title">
                     <p>Meet your future team!</p>
                 </div> 
