@@ -1,0 +1,86 @@
+@import 'variables';
+
+.main {
+    position: relative;
+    display: flex;
+    min-height: 1000px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 150px 0;
+    background-color: $lightBgc;
+
+    
+    &_wrapper {
+
+    }
+    
+    
+    &_cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2em;
+        
+        &_card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 250px;
+            text-decoration: none;
+            color: #000;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+            cursor: pointer;
+            
+            &_img {
+                height: 150px;
+                width: 150px;
+                border: 2px solid $headerBgc;
+                border-radius: 50%;
+                overflow: hidden;
+
+            }
+
+            &_name {
+                font-size: 22px;
+                margin: 10px 0;
+                font-weight: 500;
+            }
+
+            &_nickname {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &_amount-users {
+        display: flex;
+        justify-content: space-between;
+        margin: 60px 0;
+
+        &_showing {
+            margin: 15px 0 0 0; 
+        }
+
+        button {
+            margin: 0 0 0 10px;
+            padding: 10px 15px;
+            font-size: 15px;
+            background-color: $lightBgc;
+            border-radius: 8px;
+            border: 1px solid $headerBgc;
+            color: $arrow;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: $arrowHover;
+            border: 1px solid $arrowHover;
+            color: $lightBgc;
+        }
+
+
+    }
+
+}
