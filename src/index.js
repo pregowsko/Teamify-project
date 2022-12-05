@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App';
+import App from './App';
+import { GithubProvider } from './context/context';
 
 ReactDOM.render(
-        <App />,
+        <GithubProvider>
+            <App />
+        </GithubProvider>,
     document.getElementById('root')
 );
