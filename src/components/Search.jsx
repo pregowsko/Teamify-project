@@ -4,15 +4,15 @@ import { GithubContext } from '../context/context';
 import '../styles/Header.scss';
 
 const Search = () => {
-    const [ user, setUser ] = React.useState("");
+    const [ users, setUsers ] = React.useState("");
     const { searchGithubUser } = React.useContext(GithubContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (user) {
-            searchGithubUser(user);
+        if (users) {
+            searchGithubUser(users);
         }
-        console.log(user);
+        console.log(users);
     };
 
     return (
@@ -22,9 +22,9 @@ const Search = () => {
                     type="text" 
                     className="header_form_input" 
                     placeholder="Search by Nickname" 
-                    value={user} 
+                    value={users} 
                     onChange={(e) => {
-                        setUser(e.target.value)
+                        setUsers(e.target.value)
                 }}/>
                 <button className="header_form_button" type="submit">Search</button>
             </form>

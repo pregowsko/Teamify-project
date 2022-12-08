@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "../components/Header";
 import UsersList from "../components/UsersList";
+import Footer from "../components/Footer";
 
 
 const Dashboard = () => {
@@ -10,6 +11,7 @@ const Dashboard = () => {
         <>
             <Header />
             <UsersList />
+            <Footer />
         </>
     );
 };
